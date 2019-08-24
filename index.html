@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reservation hotel</title>
+  <link rel="stylesheet" href="vendors/bootstrap.css">
+  <link rel="stylesheet" href="vendors/all.css">
+  <link rel="stylesheet" href="vendors/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css"/>
+  <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="http://placehold.it/50x50">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600,700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <div class="container">
+        <nav class="mainNav">
+          <a class="logo" href="index.html">
+            <!-- <img src="img/logo.png" alt="logo image" draggable="false"> -->
+            BOOKING<span>.com</span>
+          </a>
+          <ul class="menuLinks">
+            <li class="item mr-3">
+              <a class="link active" href="index.html"><i class='fa fa-home'></i>Home</a>
+            </li>
+            <li class="item logPage">
+              <a class="link" href="log.html"><i class='fa fa-user'></i>login</a>
+            </li>
+            <li class="item">
+              <a class="link" href="hotels.html"><i class='fa fa-igloo'></i>Hotels</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="banner"></div>
+
+    <h1 class='main-title'><span>Hotels</span><br> and Places <br>to Stay !</h1>
+
+    <div class="search">
+      <h5><i class='fa fa-search'></i>Where to?</h5>    
+      <p for="">Where are you going?</p>
+      <form action="">
+        <div class="form-group">
+          <i class='fa fa-location-arrow'></i>
+          <select name="" id="mselected" class="form-control" multiple>
+            <option value="">test 1</option>
+            <option value="">test 2</option>
+            <option value="">test 3</option>
+            <option value="">test 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <i class='fa fa-calendar-alt'></i>
+          <input type="text" name='dates' class="form-control" placeholder='Check-in Date'>
+        </div>
+        <div class="form-group">
+          <i class='fa fa-calendar-alt'></i>
+          <input type="text" name='dates' class="form-control" placeholder='Check-out Date'>
+        </div>
+        <div class="row select_box">
+          <div class="col-4">
+            <label for="">Rooms :</label>
+            <select name="" id="" class='form-control'>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label for="">Adults :</label>
+            <select name="" id="" class='form-control'>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <label for="">Children :</label>
+            <select name="" id="" class='form-control'>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group submit_btn">
+          <button class=' btn mt-3' type='submit'>Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <section class="hotels_section featured-hotels">
+    <div class="container">
+      <h2 class='section-title text-white'>Featured <span>Hotels</span></h2>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="slider-area">
+            <a href='#' class="item">
+              <img src="img/slider/slide-1.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-2.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-3.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-4.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-5.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-6.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotels_section popular-hotels">
+    <div class="container">
+      <h2 class='section-title text-white'>Popular <span>Hotels</span></h2>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="slider-area">
+            <a href='#' class="item">
+              <img src="img/slider/slide-1.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-2.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-3.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-4.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-5.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+            <a href='#' class="item">
+              <img src="img/slider/slide-6.jpg" alt="">
+              <div class="caption">
+                <div class="details">
+                  <h5 class='hotel-name'>Helton Hotel</h3>
+                  <div class="stars">
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  <p class='hotel-address'>New yourk, United States</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='showcase'>
+    <div class="container">
+      <h2 class="section-title text-white">Why <span>Choose Us</span> ?</h2>
+    </div>
+    <div class="flex-box d-flex justify-content-center align-items-center flex-wrap my-5">
+      <div class="item">
+        <div class="icon safe"></div>
+        <h6>Safe and Secure</h6>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div class="item">
+        <div class="icon support"></div>
+        <h6>Customer support</h6>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div class="item">
+        <div class="icon trust"></div>
+        <h6>Trusted by Many</h6>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+
+  <footer>
+    <div class="container">
+      <div class="flex-box">
+        <div class="copyright">
+          <p class='text-white'>
+            Copyright &copy; All Rights Reserved. Powered By
+            <a target="_blank" href="http://v2.icons-agency.com/en-eg">ICONS</a>
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class='fab fa-facebook-f'></i></a>
+          <a href="#"><i class='fab fa-linkedin-in'></i></a>
+          <a href="#"><i class='fab fa-instagram'></i></a>
+          <a href="#"><i class='fab fa-google-plus-g'></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/jquery-3.4.1.js'></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+  <script src='js/bootstrap.bundle.js'></script>
+  <script src='js/bootstrap.js'></script>
+  <script src='js/jquery.easing.1.3.js'></script>
+  <script src='js/jquery.fancybox.min.js'></script>
+  <script src='js/jquery.parallax-scroll.js'></script>
+  <script src='js/pace.js'></script>
+  <script src='js/slick.min.js'></script>
+  <script src='js/aos.js'></script>
+  <script src='js/custom.js'></script>
+  <script>
+    $('.slider-area').slick({
+      autoplay: true,
+      dots: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      pauseOnHover: false,
+      prevArrow: '<button class="PrevArrow"></button>',
+      nextArrow: '<button class="NextArrow"></button>',
+      responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+    });
+  </script>
+</body>
+</html>
