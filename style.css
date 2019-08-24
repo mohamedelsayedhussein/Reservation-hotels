@@ -111,11 +111,21 @@ header {
   font-weight: 600;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .top-header .logo {
+    font-size: 1rem;
+  }
+}
 .top-header .logo span {
   color: var(--primaryColor);
 }
 .top-header .mainNav .logo img {
   width: 200px;
+}
+@media (max-width: 500px) {
+  .top-header .mainNav .logo img {
+    width: 150px;
+  }
 }
 @media (max-width: 767px) {
   .top-header .mainNav .logo img {
@@ -126,9 +136,6 @@ header {
   display: flex;
   align-items: center;
 }
-.top-header .mainNav .menuLinks .logPage {
-  margin-right: 0.8rem;
-}
 .top-header .mainNav .menuLinks .item .link:hover,
 .top-header .mainNav .menuLinks .item .link.active {
   color: var(--primaryColor);
@@ -137,13 +144,24 @@ header {
   color: #fff;
   font-size: 0.8rem;
   font-weight: 600;
+  margin-right: 0.8rem;
   transition: all .2s linear;
+}
+@media (max-width: 500px) {
+  .top-header .mainNav .menuLinks .item .link {
+    margin-right: 0.4rem;
+  }
 }
 .top-header .mainNav .menuLinks .item .link i {
   padding-right: 0.3rem;
   font-size: 0.7rem;
   color: var(--primaryColor);
   transition: all .2s linear;
+}
+@media (max-width: 450px) {
+  .top-header .mainNav .menuLinks .item .link i {
+    display: none;
+  }
 }
 .top-header .mainNav .menuLinks .item .link:hover i {
   color: #fff;

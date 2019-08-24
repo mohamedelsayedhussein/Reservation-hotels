@@ -17,6 +17,11 @@
     url("../img/hero.jpg") center no-repeat;
   background-size: cover;
 }
+@media (max-width: 450px) {
+  .hotels-banner h1 {
+    font-size: 1.2rem !important;
+  }
+}
 @media (max-width: 575px) {
   .hotels-banner h1 {
     font-size: 1.7rem;
@@ -26,6 +31,11 @@
   color: var(--primaryColor) !important;
   font-weight: 600;
   font-size: 1.2rem;
+}
+@media (max-width: 575px) {
+  .hotels-banner p {
+    font-size: 1rem;
+  }
 }
 .hotels-section-list {
   background: url("../img/log-bg.jpg") center no-repeat;
