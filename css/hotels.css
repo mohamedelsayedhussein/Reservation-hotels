@@ -428,6 +428,10 @@
 
 /*  reservation-page style  */
 
+.reservation-page {
+  background: url(../img/log-bg.jpg) center no-repeat;
+  background-size: cover;
+}
 .reservation-page .title {
   color: var(--mainColor);
 }
