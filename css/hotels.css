@@ -1,67 +1,25 @@
+
 /* hotels style */
 
-.hotels-header {
-  height: 50vh;
-}
-.hotels-banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(rgba(65, 86, 156, 0.4), rgba(65, 86, 156, 0.5)),
-    url("../img/hero.jpg") center no-repeat;
-  background-size: cover;
-}
-@media (max-width: 450px) {
-  .hotels-banner h1 {
-    font-size: 1.2rem !important;
-  }
-}
-@media (max-width: 575px) {
-  .hotels-banner h1 {
-    font-size: 1.7rem;
-  }
-}
-.hotels-banner p {
-  color: var(--primaryColor) !important;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-@media (max-width: 575px) {
-  .hotels-banner p {
-    font-size: 1rem;
-  }
-}
 .hotels-section-list {
   background: url("../img/log-bg.jpg") center no-repeat;
   background-size: cover;
+  padding: 3rem 1.5rem;
 }
 .hotels-section-list .item {
   position: relative;
   display: flex;
   background: #fff;
   margin-bottom: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 900px) {
+@media (max-width: 575px) {
   .hotels-section-list .item {
-    width: 75%;
-    margin: 0 auto 1rem;
     flex-direction: column;
   }
   .hotels-section-list .item .caption h5 {
     margin-top: 1rem !important;
-  }
-}
-@media (max-width: 767px) {
-  .hotels-section-list .item {
-    width: 100%;
   }
 }
 .hotels-section-list .item .feature-tag {
@@ -94,10 +52,23 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .hotels-section-list .item .img {
-  flex-basis: 300px;
+  display: block;
+  width: 250px;
+  flex-shrink:0;
+  height: 200px;
+  overflow: hidden;
+}
+@media (max-width: 575px) {
+  .hotels-section-list .item .img {
+    width: auto;
+  }
 }
 .hotels-section-list .item img {
-  width: 300px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
   opacity: 0.8;
   transition: all 0.2s linear;
 }
@@ -106,6 +77,12 @@
 }
 .hotels-section-list .item .caption {
   padding: .5rem 1rem;
+}
+@media (max-width: 575px) {
+  .hotels-section-list .item .caption {
+    margin-bottom: 3rem;
+    padding: .5rem 0;
+  }
 }
 .hotels-section-list .item .caption h5 {
   font-size: 1rem;
@@ -130,13 +107,24 @@
   font-weight: 500;
   margin-top: 0.7rem;
   margin-bottom: 0;
-  width: 85%;
+  width: 95%;
+}
+.hotels-section-list .item .caption span {
+  color: #d40707;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 .hotels-section-list .item .price-block {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  .hotels-section-list .item .price-block {
+    left: 1rem;
+  }
 }
 .hotels-section-list .item .price-block .price {
   position: relative;
@@ -145,8 +133,6 @@
   font-weight: 500;
   background: var(--mainColor);
   color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
   z-index: 1;
 }
 .hotels-section-list .item .price-block .price:hover {
@@ -277,4 +263,230 @@
 .pagination .page-item.active .page-link {
   background: var(--primaryColor);
   border: none;
+}
+
+/* view hotel page style */
+
+.hotels-slider .item {
+  width: 100%;
+  height: 350px;
+  border-radius: 0 0 20px 0;
+  overflow: hidden;
+}
+.hotels-slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  border-radius: 0 0 20px 0;
+  overflow: hidden;
+}
+.hotels-slider button.control {
+  position: absolute;
+  bottom: 3rem;
+  border: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 35px;
+  z-index: 3;
+  background: rgba(71, 72, 153, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  transition: all .2s cubic-bezier(.53,.2,.54,1.33);
+}
+.hotels-slider button.control:hover {
+  transform: scale(1.5);
+  background: #fff;
+  z-index: 5;
+}
+.hotels-slider button.control-l {
+  padding-left: .8rem;
+  right: 4.5rem;
+}
+.hotels-slider button.control-l:hover {
+  right: 5.2rem;
+}
+.hotels-slider button.control-r {
+  padding-right: .8rem;
+  right: 2rem;
+}
+.hotels-slider button.control-r:hover {
+  right: 1.2rem;
+}
+.hotels-slider button.control-l .PrevArrow {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+.hotels-slider button.control-r .NextArrow {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.hotels-slider button.control:hover .NextArrow,
+.hotels-slider button.control:hover .PrevArrow {
+  border-color: rgba(71, 72, 153, 1);
+}
+.view-hotel .hotel-details h3{
+  font-weight: 600;
+}
+.view-hotel .hotel-details h6{
+  font-weight: 600;
+}
+.view-hotel .hotel-details p.desc{
+  font-size: .9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+}
+.view-hotel .faciliteis h5.fac {
+  color: var(--mainColor);
+}
+.view-hotel .faciliteis h5.fac span {
+  color: var(--primaryColor);
+}
+.view-hotel .faciliteis .table-box-of-faciliteis {
+  font-size: .8rem;
+}
+.view-hotel .faciliteis .table-box-of-faciliteis > div {
+  line-height: 2.8;
+}
+.view-hotel .faciliteis .table-box-of-faciliteis span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 767px) {
+  .view-hotel .search {
+    width: 100%;
+  }
+}
+.view-hotel table.table {
+  font-size: .8rem;
+}
+.view-hotel .choose-room thead.bg-dark-color {
+  background: var(--mainColor);
+  color: #fff;
+}
+.view-hotel .choose-room thead.bg-dark-color th {
+  font-weight: 500;
+}
+.view-hotel .choose-room table td {
+  font-weight: 600;
+}
+.view-hotel .choose-room table td.choice {
+  font-weight: 400
+}
+.view-hotel .choose-room table td.choice i {
+  color: green;
+}
+.view-hotel .choose-room table td .price p {
+  font-size: 1.2rem;
+  border: 1px solid ;
+  display: inline-block;
+  padding: .3rem 1rem;
+  margin: 0;
+}
+.view-hotel .choose-room table td .nights-count span {
+  font-size: .7rem;
+}
+.view-hotel .choose-room table td .charge {
+  color: red;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: .5rem 0;
+}
+.view-hotel .choose-room table td .reserve {
+  border-radius: 0;
+  padding: .2rem 1rem;
+}
+@media(max-width: 992px) {
+  .view-hotel .choose-room table td .price p {
+    font-size: 1rem;
+  }
+  .view-hotel .choose-room table td .charge {
+    font-size: .7rem;
+  }
+  .view-hotel .choose-room table td .reserve {
+    font-size: .8rem;
+    padding: .2rem .5rem;
+  }
+}
+@media(max-width: 780px) {
+  .view-hotel .choose-room table td .price p {
+    font-size: .7rem !important;
+  }
+  .view-hotel .choose-room table td.choice {
+    font-size: .7rem;
+  }
+  .view-hotel .choose-room table td select {
+    width: 100% !important;
+  }
+}
+
+/*  reservation-page style  */
+
+.reservation-page .title {
+  color: var(--mainColor);
+}
+.reservation-page .form .form-group .form-control {
+  font-size: .8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #929292;
+  box-shadow: none;
+}
+.reservation-page .form .form-group .form-control::placeholder {
+  color: inherit;
+}
+.reservation-page .form label.title {
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reservation-page .form input[type='submit'] {
+  box-shadow: none;
+}
+.reservation-page .summary-column ul.trip {
+  color: #4D6F93;
+}
+.reservation-page .summary-column ul.trip li {
+  font-weight: 600;
+}
+.reservation-page .summary-column ul.trip li.going {
+  margin-bottom: 1.5rem;
+}
+.reservation-page .summary-column ul.trip li.coming-back i {
+  transform: rotateY(180deg) translateX(.5rem);
+}
+.reservation-page .summary-column ul.trip li.going span + span ,
+.reservation-page .summary-column ul.trip li.coming-back span + span {
+  font-size: .7rem;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2rem;
+}
+.reservation-page .summary-column .tickets-count-and-price > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  color: #4D6F93;
+}
+.reservation-page .summary-column .tickets-count-and-price .tickets {
+  font-size: .7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reservation-page .summary-column .tickets-count-and-price .tickets li {
+  line-height: 2;
+  color: #4D6F93;
+}
+.reservation-page .summary-column .tickets-count-and-price .total {
+  color: #39536e;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reservation-page .summary-column .tickets-count-and-price .include {
+  display: block;
+  font-size: .7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5177a0;
 }

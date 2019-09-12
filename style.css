@@ -64,16 +64,43 @@ h2.section-title {
 .section-title span {
   color: var(--primaryColor);
 }
-.breadcrumb {
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6666;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  display: none;
+}
+.scroll-top button {
+  background: none;
+  border: none;
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+}
+.bc-wrapper {
+  background: rgba(0, 0, 0, .3);
+}
+.bc-wrapper .breadcrumb {
   background: none;
   border-radius: 0;
+  padding: .5rem 0;
+  align-items: center;
 }
 .breadcrumb .breadcrumb-item a {
   color: #fff;
+  font-size: .8rem;
 }
 .breadcrumb-item + .breadcrumb-item::before,
 .breadcrumb-item + .breadcrumb-item {
-  color: #bbb;
+  color: #b4b4b4;
+  font-size: .8rem;
 }
 /* header style */
 
@@ -92,18 +119,14 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.3),
-    transparent
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3), transparent);
   z-index: -1;
 }
 .top-header .mainNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 .top-header .logo {
   display: block;
@@ -573,7 +596,7 @@ section.showcase .item p {
 }
 @media (max-width: 660px) {
     section.showcase .item {
-        width: 50%;
+        width: 75%;
         margin-top: 1.5rem;
     }
 }
