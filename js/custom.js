@@ -142,6 +142,12 @@ $(document).ready(function(){
   });
 
 
+  $('#mobile-sign-up').click(function() {
+    container.addClass('transition')
+  })
+  $('#mobile-sign-in').click(function() {
+    container.removeClass('transition')
+  })
   // $(document).ready(function(){
   //   $('#send-message').click(function(){
   //     $('.forget-pass').css({

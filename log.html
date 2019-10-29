@@ -37,67 +37,111 @@
         </div>
     </div>
 
-    <div class="log-page">
-        <div class="container-log" id="container-log">
-
-            <div class="form-container sign-up-container">
-                <form action="#">
-                    <h2>Create Account</h2>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div> <!-- close social-container -->
-                    <span>or use your email</span>
-                    <input type="text" class='form-control' placeholder="Name" />
-                    <input type="email" class='form-control' placeholder="Email" />
-                    <input type="password" class='form-control' placeholder="Password" />
-                    <button type='submit'>Sign Up</button>
-                </form>
-            </div> <!-- close sign-up-container -->
-
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h2>Sign in</h2>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div> <!-- close social-container -->
-                    <span>or use your account</span>
-                    <input class='form-control' type="email" placeholder="Email" />
-                    <input class='form-control' type="password" placeholder="Password" />
-                    <a href="#" id='send-message'>Forgot your password?</a>
-                    <button type='submit'>Sign In</button>
-                </form>
-            </div> <!-- close sign-in-container -->
-
-            <div class="forget-pass" id='forget-pass'>
-                <div class="box">
-                    <span class='close-forget-pass'>&times;</span>
-                    <h5>Reset Your Password</h5>
-                    <label for="">Username Or Email</label>
-                    <input class='form-control' type="email">
-                    <button type='submit'>Send Password</button>
+    <div class="log-page py-5">
+        <div class="container">
+            <div class="container-log" id="container-log">    
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <div class="box-container w-100 h-100 pt-5">
+                            <h2>Create Account</h2>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div> <!-- close social-container -->
+                            <span>or use your email</span>
+                            <div class="form-group">
+                                <input type="text" class='form-control'/>
+                                <label for="">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class='form-control'/>
+                                <label for="">user name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class='form-control'/>
+                                <label for="">password</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class='form-control'/>
+                                <label for="">confirm password</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class='form-control'/>
+                                <label for="">type</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class='form-control'/>
+                                <label for="">email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class='form-control'/>
+                                <label for="">phone</label>
+                            </div>
+                            <button type='submit'>Sign Up</button>
+                            <div class="transition-page d-block d-md-none mt-3">
+                                <span>OR</span>
+                                <button id="mobile-sign-in">Sign In</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- close sign-up-container -->
+    
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <div class="flex-box">
+                            <h2>Sign in</h2>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div> <!-- close social-container -->
+                            <span>or use your account</span>
+                            <div class="form-group">
+                                <input class='form-control' type="text"/>
+                                <label for="">user name</label>
+                            </div>
+                            <div class="form-group">
+                                    <input class='form-control' type="password"/>
+                                    <label for="">password</label>
+                            </div>
+                            <a href="#" id='send-message' class='d-block'>Forgot your password?</a>
+                            <button class='d-inlin-block' type='submit'>Sign In</button>
+                            <div class="transition-page d-block d-md-none mt-3">
+                                <span>OR</span>
+                                <button id="mobile-sign-up">sign up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- close sign-in-container -->
+    
+                <div class="forget-pass" id='forget-pass'>
+                    <div class="box">
+                        <span class='close-forget-pass'>&times;</span>
+                        <h5>Reset Your Password</h5>
+                        <label for="">Username Or Email</label>
+                        <input class='form-control' type="email">
+                        <button type='submit'>Send Password</button>
+                    </div>
                 </div>
-            </div>
-
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h2>Welcome Back!</h2>
-                        <p>To keep connected with us please
-                            login with your personal info</p>
-                        <button class="ghost" id="signIn">Sign In</button>
-                    </div> <!-- close overlay-left -->
-                    <div class="overlay-panel overlay-right">
-                        <h2>Dear, Customer!</h2>
-                        <p>Please Enter your personal info and start with us</p>
-                        <button class="ghost" id="signUp">Sign Up</button>
-                    </div> <!-- close overlay-right -->
-                </div> <!-- close overlay -->
-            </div> <!-- close overlay-container -->
-        </div> <!-- close container-log -->
+    
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h2>Welcome Back!</h2>
+                            <p>To keep connected with us please
+                                login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div> <!-- close overlay-left -->
+                        <div class="overlay-panel overlay-right">
+                            <h2>Dear, Customer!</h2>
+                            <p>Please Enter your personal info and start with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div> <!-- close overlay-right -->
+                    </div> <!-- close overlay -->
+                </div> <!-- close overlay-container -->
+            </div> <!-- close container-log -->
+        </div> <!-- close container-->
     </div> <!-- close log-page -->
 
     <footer>

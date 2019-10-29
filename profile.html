@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation hotel</title>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="vendors/all.css">
+    <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <!-- datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="http://placehold.it/50x50">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600,700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <nav class="mainNav">
+                    <a class="logo" href="index.html">
+                        <!-- <img src="img/logo.png" alt="logo image" draggable="false"> -->
+                        BOOKING<span>.com</span>
+                    </a>
+                    <ul class="menuLinks">
+                        <li class="item mr-3">
+                            <a class="link active" href="index.html"><i class='fa fa-home'></i>Home</a>
+                        </li>
+                        <li class="item logPage">
+                            <a class="link" href="log.html"><i class='fa fa-user'></i>login</a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="hotels.html"><i class='fa fa-igloo'></i>Hotels</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="banner"></div>
+
+    </header>
+
+    <!-- start profile -->
+
+    <section class="profile-page">
+        <div class="container">
+            <div class="text-wrap text-center mb-4">
+                <h2 class="section-title">my profile</h2>
+            </div>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">my profile</a></li>
+                    <li><a href="#tabs-2">another tab</a></li>
+                    <li><a href="#tabs-3">another tab</a></li>
+                    <li><a href="#tabs-4">another tab</a></li>
+                    <li><a href="#tabs-5">another tab</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <table id='profile-table' class="table table-bordered table-sm w-100">
+                        <thead>
+                            <tr>
+                                <th scope="col">test</th>
+                                <th scope="col">test</th>
+                                <th scope="col">test</th>
+                                <th scope="col">test</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                            </tr>
+                            <tr>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                            </tr>
+                            <tr>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tabs-2">
+
+                </div>
+                <div id="tabs-3">
+
+                </div>
+                <div id="tabs-4">
+
+                </div>
+                <div id="tabs-5">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end profile -->
+
+    <!-- footer section -->
+
+    <footer>
+        <div class="container">
+            <div class="flex-box">
+                <div class="copyright">
+                    <p class='text-white'>
+                        Copyright &copy; All Rights Reserved. Powered By
+                        <a target="_blank" href="http://v2.icons-agency.com/en-eg">ICONS</a>
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class='fab fa-facebook-f'></i></a>
+                    <a href="#"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="#"><i class='fab fa-instagram'></i></a>
+                    <a href="#"><i class='fab fa-google-plus-g'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll to top button -->
+
+    <div class="scroll-top">
+        <button><i class="fa fa-angle-up"></i></button>
+    </div>
+
+    <script src='js/jquery-3.4.1.js'></script>
+    <script src='js/bootstrap.bundle.js'></script>
+    <script src='js/bootstrap.js'></script>
+    <script src='js/jquery.easing.1.3.js'></script>
+    <script src='js/pace.js'></script>
+    <script src='js/aos.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+    <script src='js/custom.js'></script>
+
+    <script>
+        $(function () {
+            $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
+            $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+
+            /* $('#profile-table').DataTable({
+                responsive: true,
+                pagingType:'full_numbers',
+                searching: false,
+                ordering: false,
+                paging: false,
+                scrollCollapse: true,
+                scrollY: 300,
+                scrollX: true
+            }); */
+        });
+    </script>
+
+</body>
+
+</html>
