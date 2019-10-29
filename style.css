@@ -140,7 +140,6 @@ header {
 }
 .top-header .mainNav .notification {
   position: relative;
-  cursor: pointer;
   margin-left: 1rem;
 }
 .top-header .mainNav .notification:after {
@@ -165,29 +164,62 @@ header {
   vertical-align: middle;
   color: var(--primaryColor);
   font-size: 1.1rem;
+  cursor: pointer;
 }
 .top-header .mainNav .notification .submenu-notification {
   position: absolute;
-  top: 100%;
-  left: calc(-50% - 50px);
-  min-width: calc(100% + 100px);
+  top: calc(100% + 20px);
+  right: -20px;
+  width: 300px;
+  max-height: 300px;
+  overflow-y: auto;
   background: #fff;
   display: none;
 }
-.top-header .mainNav .notification:hover .submenu-notification {
+.top-header .mainNav .notification.show .submenu-notification {
   display: block;
 }
-.top-header .mainNav .notification .submenu-notification a {
-  display: block;
-  color: var(--mainColor);
-  padding: .5rem 1rem;
-  font-size: .8rem;
+.top-header .mainNav .notification .submenu-notification li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
   border-bottom: 1px solid rgba(0,0,0,.1);
+  color: var(--mainColor);
 }
-.top-header .mainNav .notification .submenu-notification a:hover {
+.top-header .mainNav .notification .submenu-notification li:hover {
   background: var(--mainColor);
   color: #fff;
 }
+.top-header .mainNav .notification .submenu-notification li h6,
+.top-header .mainNav .notification .submenu-notification li p {
+  margin: 0;
+  font-size: .9rem;
+}
+.top-header .mainNav .notification .submenu-notification li p i {
+  pointer-events: none;
+  color: var(--mainColor);
+  font-size: .8rem;
+  margin-right: .3rem;
+}
+.top-header .mainNav .notification .submenu-notification li:hover p i {
+  color: #fff;
+}
+.top-header .mainNav .notification .submenu-notification .head {
+  background: #ccc;
+  padding: 1.4rem 1rem;
+}
+.top-header .mainNav .notification .submenu-notification li.head:hover {
+  background: #ccc;
+  color: var(--mainColor);
+}
+.top-header .mainNav .notification .submenu-notification a {
+  display: block;
+  color: inherit;
+  font-size: .8rem;
+  text-decoration: underline !important;
+}
+
 @media (max-width: 500px) {
   .top-header .logo {
     font-size: 1rem;
